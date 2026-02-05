@@ -1,0 +1,34 @@
+body {
+    background-color: #f4f6f9;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.table {
+    background-color: #fff;
+}
+
+    .table th {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+.btn {
+    border-radius: 6px;
+}
+
+.form-control {
+    border-radius: 6px;
+}
+
+.footer {
+    font-size: 14px;
+}
