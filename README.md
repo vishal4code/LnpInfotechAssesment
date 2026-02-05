@@ -43,12 +43,14 @@ Navigate to the solution root directory and restore all dependencies:
 
 dotnet restore
 
-```
-
 RUN 3 Commands
-dotnet add Assessment.DAL package Microsoft.EntityFrameworkCore --version 8.0.2
+1) dotnet add Assessment.DAL package Microsoft.EntityFrameworkCore --version 8.0.2
 2) dotnet add Assessment.DAL package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.2
 3) dotnet add Assessment.DAL package Microsoft.EntityFrameworkCore.Tools --version 8.0.2
+
+```
+
+
 
 ### Step 3: Verify Project Structure
 
