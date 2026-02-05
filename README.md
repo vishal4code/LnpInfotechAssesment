@@ -97,16 +97,19 @@ Open `Assessment.UI/appsettings.json` and configure the database connection:
 *********Step 1: Create database**********
 
 Open SQL Server Management Studio (SSMS) and run:
-
+```sql
 CREATE DATABASE AssessmentDB;
 GO
-
+```
 *********** Step 2: Select database*********
+```sql
 
 USE AssessmentDB;
 GO
+```
 
 ********* Step 3: Create tables*************
+```sql
 
 CREATE TABLE Categories (
     CategoryId INT IDENTITY PRIMARY KEY,
@@ -129,8 +132,10 @@ CREATE TABLE ProductCategories (
     CONSTRAINT FK_PC_Product FOREIGN KEY (ProductId) REFERENCES Products(ProductId),
     CONSTRAINT FK_PC_Category FOREIGN KEY (CategoryId) REFERENCES Categories(CategoryId)
 );
+```
 
 *********** Step 4: Create stored procedures*************
+```sql
 
 CREATE PROC sp_AddProduct
 (
@@ -144,6 +149,9 @@ BEGIN
     INSERT INTO Products(ProductName, Description, Quantity, Price)
     VALUES (@ProductName, @Description, @Quantity, @Price)
 END
+```
+
+```sql
 
 CREATE PROC sp_UpdateProduct
 (
@@ -162,14 +170,16 @@ BEGIN
         Price = @Price
     WHERE ProductId = @ProductId
 END
+```
 
+```sql
 CREATE PROC sp_DeleteProduct
 (@ProductId INT)
 AS
 BEGIN
     DELETE FROM Products WHERE ProductId = @ProductId
 END
-
+```
 
 ---
 
