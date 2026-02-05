@@ -84,7 +84,7 @@ Open `Assessment.UI/appsettings.json` and configure the database connection:
 
  "ConnectionStrings": {
 
- "DefaultConnection": "Server=.\\\\SQLEXPRESS;Database=AssessmentDB;Trusted\_Connection=True;TrustServerCertificate=True;"
+ "DefaultConnection": "Server=.\\SQLEXPRESS;Database=AssessmentDB;TrustedConnection=True;TrustServerCertificate=True;"
 
  }
 
