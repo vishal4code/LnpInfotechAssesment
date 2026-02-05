@@ -21,7 +21,7 @@ Before starting, ensure you have the following installed on your system:
 
 \# If cloning from Git
 
-git clone <repository-url>
+git clone https://github.com/vishal4code/LnpInfotechAssesment.git
 
 cd Assessment
 
